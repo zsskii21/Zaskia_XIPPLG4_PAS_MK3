@@ -19,50 +19,68 @@ function play(player, psum, correction, num) {
             // sum = p1sum
         }
 
-        if (p1sum == 1) {
+        if (p1sum == 2) {
             p1sum = 38
         }
-        if (p1sum == 4) {
+        if (p1sum == 7) {
             p1sum = 14
         }
         if (p1sum == 8) {
-            p1sum = 30
+            p1sum = 31
+        }
+        if (p1sum == 15) {
+            p1sum = 26
         }
         if (p1sum == 21) {
             p1sum = 42
         }
         if (p1sum == 28) {
-            p1sum = 76
-        }
-        if (p1sum == 32) {
-            p1sum = 10
+            p1sum = 84
         }
         if (p1sum == 36) {
-            p1sum = 6
+            psum = 44
         }
-        if (p1sum == 48) {
-            p1sum = 26
-        }
-        if (p1sum == 50) {
+        if (p1sum == 51) {
             p1sum = 67
         }
-        if (p1sum == 62) {
-            p1sum = 18
-        }
         if (p1sum == 71) {
-            p1sum = 92
+            p1sum = 91
         }
-        if (p1sum == 80) {
-            p1sum = 99
+        if (p1sum == 78) {
+            p1sum = 98
         }
-        if (p1sum == 88) {
-            p1sum = 24
+        if (p1sum == 87) {
+            p1sum = 94
+        }
+        if (p1sum == 16) {
+            p1sum = 6
+        }
+        if (p1sum == 46) {
+            p1sum = 25
+        }
+        if (p1sum == 49) {
+            p1sum = 11
+        }
+        if (p1sum == 62) {
+            p1sum = 19
+        }
+        if (p1sum == 64) {
+            p1sum = 60
+        }
+        if (p1sum == 74) {
+            p1sum = 53
+        }
+        if (p1sum == 89) {
+            p1sum = 68
+        }
+        if (p1sum == 92) {
+            p1sum = 88
         }
         if (p1sum == 95) {
-            p1sum = 56
+            p1sum = 75
         }
-        if (p1sum == 97) {
-            p1sum = 78
+        if (p1sum == 99) {
+            p1sum = 80
         }
 
         sum = p1sum
@@ -81,51 +99,70 @@ function play(player, psum, correction, num) {
         }
         
 
-        if (p2sum == 1) {
+        if (p2sum == 2) {
             p2sum = 38
         }
-        if (p2sum == 4) {
+        if (p2sum == 7) {
             p2sum = 14
         }
         if (p2sum == 8) {
-            p2sum = 30
+            p2sum = 31
+        }
+        if (p2sum == 15) {
+            p2sum = 26
         }
         if (p2sum == 21) {
             p2sum = 42
         }
         if (p2sum == 28) {
-            p2sum = 76
-        }
-        if (p2sum == 32) {
-            p2sum = 10
+            p2sum = 84
         }
         if (p2sum == 36) {
-            p2sum = 6
+            p2sum = 44
         }
-        if (p2sum == 48) {
-            p2sum = 26
-        }
-        if (p2sum == 50) {
+        if (p2sum == 51) {
             p2sum = 67
         }
-        if (p2sum == 62) {
-            p2sum = 18
-        }
         if (p2sum == 71) {
-            p2sum = 92
+            p2sum = 91
         }
-        if (p2sum == 80) {
-            p2sum = 99
+        if (p2sum == 78) {
+            p2sum = 98
         }
-        if (p2sum == 88) {
-            p2sum = 24
+        if (p2sum == 87) {
+            p2sum = 94
+        }
+        if (p2sum == 16) {
+            p2sum = 6
+        }
+        if (p2sum == 46) {
+            p2sum = 25
+        }
+        if (p2sum == 49) {
+            p2sum = 11
+        }
+        if (p2sum == 62) {
+            p2sum = 19
+        }
+        if (p2sum == 64) {
+            p2sum = 60
+        }
+        if (p2sum == 74) {
+            p2sum = 53
+        }
+        if (p2sum == 89) {
+            p2sum = 68
+        }
+        if (p2sum == 92) {
+            p2sum = 88
         }
         if (p2sum == 95) {
-            p2sum = 56
+            p2sum = 75
         }
-        if (p2sum == 97) {
-            p2sum = 78
+        if (p2sum == 99) {
+            p2sum = 80
         }
+        
 
         sum = p2sum
 
@@ -151,10 +188,10 @@ function play(player, psum, correction, num) {
     else if (sum == 100) {
         winSound.play()
         if (player == 'p1') {
-            alert("Red Won !!")
+            alert("Pink Won !!")
         }
         else if (player == 'p2') {
-            alert("Yellow Won !!")
+            alert("Maroon Won !!")
         }
         location.reload()
     }
@@ -206,13 +243,13 @@ document.getElementById("diceBtn").addEventListener("click", function () {
 
 
     if (tog % 2 != 0) {
-        document.getElementById('tog').innerText = "Yellow's Turn : "
+        document.getElementById('tog').innerText = "Maroon's Turn : "
         play('p1', 'p1sum', 0, num)
 
     }
 
     else if (tog % 2 == 0) {
-        document.getElementById('tog').innerText = "Red's Turn : "
+        document.getElementById('tog').innerText = "Pink's Turn : "
 
         play('p2', 'p2sum', 55, num)
 
