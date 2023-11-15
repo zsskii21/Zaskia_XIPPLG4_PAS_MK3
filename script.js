@@ -64,37 +64,6 @@ function play(player, psum, correction, num) {
         if (p1sum == 97) {
             p1sum = 78
         }
-        if (p1sum == 16) {
-            p1sum = 6
-        }
-        if (p1sum == 46) {
-            p1sum = 25
-        }
-        if (p1sum == 49) {
-            p1sum = 11
-        }
-        if (p1sum == 62) {
-            p1sum = 19
-        }
-        if (p1sum == 64) {
-            p1sum = 60
-        }
-        if (p1sum == 74) {
-            p1sum = 53
-        }
-        if (p1sum == 89) {
-            p1sum = 68
-        }
-        if (p1sum == 92) {
-            p1sum = 88
-        }
-        if (p1sum == 95) {
-            p1sum = 75
-        }
-        if (p1sum == 99) {
-            p1sum = 80
-        }
-        
 
         sum = p1sum
 
@@ -112,68 +81,50 @@ function play(player, psum, correction, num) {
         }
         
 
-        if (p2sum == 2) {
+        if (p2sum == 1) {
             p2sum = 38
         }
-        if (p2sum == 7) {
+        if (p2sum == 4) {
             p2sum = 14
         }
         if (p2sum == 8) {
-            p2sum = 31
-        }
-        if (p2sum == 15) {
-            p2sum = 26
+            p2sum = 30
         }
         if (p2sum == 21) {
             p2sum = 42
         }
         if (p2sum == 28) {
-            p2sum = 84
+            p2sum = 76
+        }
+        if (p2sum == 32) {
+            p2sum = 10
         }
         if (p2sum == 36) {
-            p2sum = 44
+            p2sum = 6
         }
-        if (p2sum == 51) {
+        if (p2sum == 48) {
+            p2sum = 26
+        }
+        if (p2sum == 50) {
             p2sum = 67
         }
+        if (p2sum == 62) {
+            p2sum = 18
+        }
         if (p2sum == 71) {
-            p2sum = 91
+            p2sum = 92
         }
-        if (p2sum == 78) {
-            p2sum = 98
+        if (p2sum == 80) {
+            p2sum = 99
         }
-        if (p2sum == 87) {
-            p2sum = 95
+        if (p2sum == 88) {
+            p2sum = 24
         }
-        if (p1sum == 16) {
-            p1sum = 6
+        if (p2sum == 95) {
+            p2sum = 56
         }
-        if (p1sum == 46) {
-            p1sum = 25
-        }
-        if (p1sum == 49) {
-            p1sum = 11
-        }
-        if (p1sum == 62) {
-            p1sum = 19
-        }
-        if (p1sum == 64) {
-            p1sum = 60
-        }
-        if (p1sum == 74) {
-            p1sum = 53
-        }
-        if (p1sum == 89) {
-            p1sum = 68
-        }
-        if (p1sum == 92) {
-            p1sum = 88
-        }
-        if (p1sum == 95) {
-            p1sum = 75
-        }
-        if (p1sum == 99) {
-            p1sum = 80
+        if (p2sum == 97) {
+            p2sum = 78
         }
 
         sum = p2sum
@@ -200,10 +151,10 @@ function play(player, psum, correction, num) {
     else if (sum == 100) {
         winSound.play()
         if (player == 'p1') {
-            alert("Red Win !!")
+            alert("Red Won !!")
         }
         else if (player == 'p2') {
-            alert("Yellow Win !!")
+            alert("Yellow Won !!")
         }
         location.reload()
     }
